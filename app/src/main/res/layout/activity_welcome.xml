@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    tools:context=".WelcomeActivity">
+
+    <Button
+        android:id="@+id/phoneAuthCustom"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Вход по номеру"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/testbtnmap"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Тест карт"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/driverBtn"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="Таксист"
+        />
+    <Button
+        android:id="@+id/customerBtn"
+        android:layout_below="@id/driverBtn"
+        android:layout_marginTop="25dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:text="Пассажир"
+        />
+</RelativeLayout>

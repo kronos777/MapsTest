@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/app_bar_settings">
+                <Toolbar
+                    android:id="@+id/toolbar_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/design_default_color_primary_dark">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/close_button"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:onClick="clickExitSettings"
+                            android:src="@drawable/close"
+                            app:tint="@android:color/white" />
+
+                        <ImageView
+                            android:id="@+id/close_save"
+                            android:layout_width="35dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentEnd="true"
+                            android:onClick="clickSaveSettings"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/save_edited_info"
+                            app:tint="@android:color/white" />
+                    </RelativeLayout>
+                </Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:onClick="checkImageOne"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/app_bar_settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/design_default_color_primary"
+        app:civ_border_width="4dp" />
+    <TextView
+        android:id="@+id/change_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сменить фото"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:layout_below="@id/change_foto"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        android:layout_below="@id/name"
+        android:layout_margin="15dp"/>
+    <EditText
+        android:id="@+id/carModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Марка автомобиля"
+        android:layout_below="@id/phone"
+        android:layout_margin="15dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary_dark"
+    tools:context=".TestMapsActivity">
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_alignParentBottom="true">
+        <fragment android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+        <fragment android:id="@+id/autocomplete_fragmentEnd"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/autocomplete_fragment"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+        <!--EditText
+            android:id="@+id/addressDispatch"
+            android:layout_width="match_parent"
+            android:hint="Откуда поедите ?"
+            android:layout_height="50dp"
+            android:layout_below="@id/autocomplete_fragment"
+            android:layout_margin="15dp"></EditText>
+
+        <EditText
+            android:id="@+id/addressAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Куда поедите ?"
+            android:layout_below="@id/addressDispatch"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"></EditText-->
+
+        <Button
+            android:id="@+id/buttonCallDriver"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="buttonCallDriverClick"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autocomplete_fragmentEnd"
+            android:text="Вызвать такси" />
+
+        <Button
+            android:id="@+id/buttonCancelCallDriver"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autocomplete_fragmentEnd"
+            android:text="отмена вызова" />
+        <Button
+            android:id="@+id/buttonPhoneCallDriver"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autocomplete_fragmentEnd"
+            android:text="Позвонить водителю" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

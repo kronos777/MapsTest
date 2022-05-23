@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TaxiAppsWM</string>
+    <string name="title_activity_driver_maps">DriverMapsActivity</string>
+    <string name="title_activity_customer_maps">CustomerMapsActivity</string>
+    <string name="title_activity_test_maps">TestMapsActivity</string>
+</resources>

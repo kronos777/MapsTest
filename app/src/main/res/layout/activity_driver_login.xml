@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimg"
+    tools:context=".DriverLoginActivity">
+
+
+    <TextView
+        android:id="@+id/statusDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="32dp"
+        android:text="Вход для водителей" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/statusDriver"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:text="Нет аккаунта" />
+
+    <EditText
+        android:id="@+id/driverEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/question"
+        android:ems="10"
+        android:hint="your@email.ru"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/driverPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/driverEmail"
+        android:ems="10"
+        android:hint="Ваш пароль"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/driverPassword"
+        android:layout_height="wrap_content"
+        android:text="Войти" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_below="@id/signIn"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться" />
+
+
+</RelativeLayout>
